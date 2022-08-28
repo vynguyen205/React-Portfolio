@@ -9,9 +9,9 @@ export default function Sidebar() {
   };
 
   return (
-    <aside className="min-h-screen min-w-[10%] bg-slate-400">
+    <aside className="min-h-screen min-w-[10%]">
       <div className="flex flex-col overflow-y-auto shrink">
-        <div className="flex flex-col items-center pt-24 px-9">
+        <div className="flex flex-col items-center pt-24 px-20">
           <div
             id="profile"
             className="h-72 w-72 rounded-full bg-blue-500"

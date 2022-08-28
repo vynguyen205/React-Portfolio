@@ -3,7 +3,7 @@ import { faCode, faBorderAll } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   return (
-    <nav className="border-b">
+    <nav className="border-b border-slate-800 ">
       <div className="flex flex-grow items-start mb-2">
         <div className="flex px-2.5 py-1 rounded-md hover:bg-[#45484a8d] hover:border-[#777777] focus:outline-none focus:border-transparent focus:bg-[#2326298b] focus:border-[#494949] active:bg-[#2326298b] active:border-[#494949] transition duration-150 ease-in-out">
           <FontAwesomeIcon
