@@ -1,4 +1,8 @@
 export default function PostingProfile() {
+  const handleClick = (url) => {
+    // open the url in a new tab
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
   return (
     <div className="flex">
       <div
@@ -7,9 +11,12 @@ export default function PostingProfile() {
       ></div>
       <div className="flex flex-col">
         <div className="flex items-center">
-          <div className="w-full text-sm font-light text-blue-400 mr-1.5">
+          <button
+            className="w-full text-sm font-light text-blue-400 mr-1.5 hover:underline"
+            onClick={() => handleClick("https://github.com/vynguyen205")}
+          >
             vynguyen205
-          </div>
+          </button>
           <div className="w-full text-sm text-slate-300 mr-1.5">/</div>
           <div className="w-full text-sm font-bold text-blue-400">
             AboutMe.md
