@@ -1,10 +1,15 @@
-export default function Projects() {
+import { HiFolderOpen } from "react-icons/hi";
+
+export default function Projects({ project }) {
+  const { name, description, link, repo } = project;
   return (
-    <main className="h-screen bg-slate-900">
-      <div className="flex flex-col items-center justify-center h-screen">
-        <div className="text-3xl font-medium text-white">Projects</div>
-        <div className="text-xl font-medium text-white">Coming soon</div>
+    <div className="project" key={name}>
+      <div className="flex">
+        <HiFolderOpen />
+        {name} <a href={link}>link</a>
+        <div className="border">Public</div>
       </div>
-    </main>
+      <div className="flex">{description}</div>
+    </div>
   );
 }
